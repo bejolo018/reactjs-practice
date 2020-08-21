@@ -55,7 +55,9 @@ function App() {
           </div>
           </div>
 
-        ): ('') )}
+        ): (<div className='error'>
+          City not found, please check your spelling or try again later.
+        </div>) )}
 
       </main>
     </div>

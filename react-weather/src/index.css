@@ -12,11 +12,14 @@ body {
   background-image: url('./assets/cold-bg.jpg');
   background-size: cover;
   background-position: bottom;
-  transition: 0.4 ease-out;
+  transition: 0.4s ease-out;
 }
 
 .app-warm{
-  background-image: url('./assets/warm-bg.jpg')
+  background-image: url('./assets/warm-bg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-out;
 }
 
 main{
@@ -99,6 +102,12 @@ main{
 }
 
 .weather-box .weather {
+  color: #FFF;
+  font-size: 48px;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.error{
   color: #FFF;
   font-size: 48px;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
