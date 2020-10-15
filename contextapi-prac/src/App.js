@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import MovieList from './Components/MovieList'
-import Nav from './Components/Nav'
+import MovieList from './MovieList'
+import Nav from './Nav'
 import { MovieProvider } from '../Context/MovieContext'
 
 function App() {
