@@ -1,25 +1,8 @@
 import React, { useState } from 'react'
 import Movie from './Movie'
 
-const MovieList = () => {
-    const [movies, setMovies] = useState([
-        {
-            name: 'movie1',
-            price: '123',
-            id: 411
-        },
-        {
-            name: 'movie2',
-            price: '123',
-            id: 412
-        },
-        {
-            name: 'movie3',
-            price: '123',
-            id: 413
-        },
-    ])
 
+const MovieList = () => {
     return (
         <div>
         {movies.map(movie => (
