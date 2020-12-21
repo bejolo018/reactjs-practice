@@ -6,9 +6,13 @@ function App() {
 
   const [todos, setTodos] = useState([])
 
+  const addTodo = (todo) => {
+    setTodos([todo, ...todos])
+  }
+
   return (
     <div className="App">
-      <TodoForm />
+      <TodoForm addTodo={addTodo}/>
     </div>
   );
 }

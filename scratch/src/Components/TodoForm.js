@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
-const TodoForm = () => {
+const TodoForm = ({ addTodo }) => {
     const [todo, setTodo] = useState({
         task: ""
     })
 
     const handleInput = (e) => {
-        setTodo(...todo, e.target.value)
+        setTodo({...todo, task: e.target.value})
     }
 
     const handleSubmit = (e) => {
@@ -17,7 +17,7 @@ const TodoForm = () => {
         }
     }
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <input name="task" type="text" value ={todo.task} onChange={handleInput} />
             <button type="submit">submit</button>
         </form>
