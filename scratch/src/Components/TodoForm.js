@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import {v4 as uuid} from "uuid"
 
 const TodoForm = ({ addTodo }) => {
     const [todo, setTodo] = useState({
-        task: ""
+        task: "",
+        id: ""
     })
 
     const handleInput = (e) => {
@@ -12,7 +14,7 @@ const TodoForm = ({ addTodo }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         if(todo.task){
-            addTodo({...todo})
+            addTodo({...todo, id: uuid()})
             setTodo({...todo, task: ""})
         }
     }
